@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPTCHA Verification</title>
+  <link rel="stylesheet" href="vs code file 4.css">
+</head>
+<body>
+
+  <main class="captcha-card">
+
+    <h1>Security Verification</h1>
+    <p class="subtitle">Please verify that you are human.</p>
+
+    <div class="robot-box">
+      <label class="robot-label">
+        <input type="checkbox" id="robot-checkbox">
+        <span>I'm not a robot</span>
+      </label>
+
+      <span class="captcha-logo">🛡️</span>
+    </div>
+
+    <section id="challenge" class="hidden">
+
+      <h2>Select all images with bicycles</h2>
+      <p class="hint">Click every matching image.</p>
+
+      <div class="image-grid" id="image-grid">
+
+        <button class="tile" data-id="0">
+          <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=300&h=220&fit=crop" alt="Bicycle">
+        </button>
+
+        <button class="tile" data-id="1">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=300&h=220&fit=crop" alt="Car">
+        </button>
+
+        <button class="tile" data-id="2">
+          <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=300&h=220&fit=crop" alt="Bicycle">
+        </button>
+
+        <button class="tile" data-id="3">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=300&h=220&fit=crop" alt="Car">
+        </button>
+
+        <button class="tile" data-id="4">
+          <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=300&h=220&fit=crop" alt="Bicycle">
+        </button>
+
+        <button class="tile" data-id="5">
+          <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=300&h=220&fit=crop" alt="Car">
+        </button>
+
+        <button class="tile" data-id="6">
+            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=300&h=220&fit=crop"alt="Bicycle">
+        </button>
+
+        <button class="tile" data-id="7">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=300&h=220&fit=crop" alt="Car">
+        </button>
+
+        <button class="tile" data-id="8">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?w=300&h=220&fit=crop" alt="Bicycle">
+        </button>
+
+      </div>
+
+      <p id="message" aria-live="polite"></p>
+
+      <button id="verify-button" class="verify-button">
+        Verify
+      </button>
+
+    </section>
+
+    <section id="success" class="hidden">
+      <div class="success-icon">✓</div>
+      <h2>Verification Successful!</h2>
+      <p>You completed the CAPTCHA demo.</p>
+      <button id="continue-button" class="verify-button">
+        Continue
+      </button>
+    </section>
+
+    <p class="footer">CAPTCHA Learning Project</p>
+
+  </main>
+
+  <script src="vs code file 6.js"></script>
+</body>
+</html>
